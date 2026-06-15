@@ -19,6 +19,9 @@ Programmatic runs require a network connection and a Pepkio API key. Calculator 
 
 # Installation
 
+```bash
+pip install pepkio-bio-unit-converter
+```
 
 Set an API key with **tools:run** scope before calling the API:
 
