@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """Python client for Pepkio bio-unit-converter."""
 
 from .client import PepkioClient
