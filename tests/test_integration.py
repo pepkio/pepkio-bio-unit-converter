@@ -26,6 +26,12 @@ def live_client(request):
     api_key = _api_key_for(base_url)
     if not api_key:
         pytest.skip(f"No API key for {env_name} (set LOCAL_PEPKIO_API_KEY or PEPKIO_API_KEY)")
+    probe_timeout = 1.0 if "localtest.me" in base_url else 10.0
+    try:
+        with PepkioClient(api_key=api_key, base_url=base_url, timeout=probe_timeout) as client:
+            client.get_manifest()
+    except Exception as exc:
+        pytest.skip(f"Environment {env_name} ({base_url}) unreachable: {exc}")
     with PepkioClient(api_key=api_key, base_url=base_url) as client:
         yield client
 
