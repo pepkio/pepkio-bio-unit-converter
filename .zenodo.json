@@ -1,0 +1,25 @@
+{
+  "upload_type": "software",
+  "access_right": "open",
+  "title": "pepkio-bio-unit-converter v0.1.0 – a Python client for biological concentration, cell density, and dilution conversions via the Pepkio life-science calculator suite",
+  "description": "Preserving **pepkio-bio-unit-converter** on Zenodo establishes a citable, version-frozen Python interface for standardized biological concentration math, spectrophotometric OD600 cell density calibrations, and algebraic dilution solving in computational life-science workflows. The archived package preserves v0.1.0 of the open-source lab calculator API wrapper to enable exact computational replication across automated pipelines and reproducible calculation workflows, delegating algebraic molarity calculations, compound molecular weight lookups, and organism-specific optical density models to the hosted Pepkio calculator API without embedding solver logic locally. Source code and the issue tracker are maintained at https://github.com/pepkio/pepkio-bio-unit-converter. The primary interactive platform for the same calculations is the [Pepkio Bio Unit Converter](https://www.pepkio.com/tools/bio-unit-converter), part of a Pepkio suite of more than thirty web tools covering solution prep, PCR, cell culture, assays, pharmacology, education, and sequence utilities. The Python client supports batch evaluations, dimensional unit transformations (such as ng/mL to nM), and pipeline integration in Jupyter, Nextflow, and Snakemake. Released under the MIT License; Pepkio (https://www.pepkio.com/) develops laboratory calculators and analysis services (https://www.pepkio.com/cro) for life science research.",
+  "notes": "**Suggested citation.** When referencing the archived client in a publication, cite the Zenodo DOI together with the GitHub repository (https://github.com/pepkio/pepkio-bio-unit-converter) and record the client version (v0.1.0) in methods or supplementary materials.\n\n**Programmatic access.** This client is the recommended interface for scripted calls to the Pepkio Bio Unit Converter API; the interactive web application remains available for manual conversions. Calculator logic resides on Pepkio servers; this package transmits parameters and returns structured results only.\n\nA semantic, AI-native version of this document in the K2F format is available at https://k2f.dev (https://k2f.dev/v/e5e67cb795aec19c84f4367753a458193ab64f98501596b24e2b581d85f4fc48)",
+  "version": "0.1.0",
+  "license": "mit",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Pepkio",
+      "affiliation": "Pepkio"
+    }
+  ],
+  "keywords": [
+    "Python client for lab calculators",
+    "bio-unit-converter",
+    "bioinformatics",
+    "reproducible research",
+    "concentration math",
+    "dilution calculator",
+    "OD600"
+  ]
+}
